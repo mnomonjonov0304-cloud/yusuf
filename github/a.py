@@ -33,6 +33,15 @@
 #                 kotta=x["payment"]
 #                 ism=x["name"]
 #                 fil=i["name"]
-# print(kotta,ism,fil)                
+# print(kotta,ism,fil)               
+
+# import json
+# with open("last.json") as ptr:
+#     data=json.load(ptr)
+#     for i in data["branches"]:
+#         umumiy=0
+#         for x in i["students"]:
+#             umumiy+=x["payment"]
+#         print(i["name"],umumiy)        
 
 
