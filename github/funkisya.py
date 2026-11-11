@@ -17,3 +17,9 @@ def majority_element(nums: list) -> int:
             javob = son
 
     return javob
+def search_by_genre(cinema: list, genre: str) -> list:
+    natija=[]
+    for film in cinema:
+        if film["genre"]==genre:
+            natija.append(film)
+    return natija
