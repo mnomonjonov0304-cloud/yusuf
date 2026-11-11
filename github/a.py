@@ -61,4 +61,13 @@
 #                      print(x["name"])
 
 
+# uy ishi 
+# from funkisya import majorty_element
+
+# print(majorty_element([3, 3, 4]))
+# print(majorty_element([1, 1, 2, 2, 2, 3]))
+# print(majorty_element([]))
+
+
+
 
