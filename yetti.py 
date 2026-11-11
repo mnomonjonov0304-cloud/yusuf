@@ -1,0 +1,98 @@
+from lib import*
+# dokon=list(map(lambda x: int(x*1.12), [10000, 25000, 5000]))
+#  print(dokon)
+
+#  2
+#  email=list(map(lambda x: x.split()[-1],["Ali, ali@gmail.com"]))
+#  print(email)
+
+#   3
+#  ovqat=list(filter(lambda x: x==True,[("Burger",False),("Salad",True),("Soup",True),("Steak",False)]))
+#  print(ovqat)
+
+#   4
+#  baho=list(filter(lambda x: x>=60,[55,60,75,90,45]))
+#  print(baho)
+
+#  5
+#  tel=list(filter(lambda x: "+998" in x,["+998942169306","+3752912345"]))
+  print(tel)
+
+#  6
+#  kitob=list(map(lambda x: x//30,[120,350,210,5000,90]))
+# print(kitob)
+
+#  7
+# max=list(map(lambda x: f"{str(x)[::3]},000 so'm",[150000,23000,5000,125000]))
+# print(max)
+# vb  
+# 8
+
+# natija=list(filter(lambda x:x[1]=="IT",[("Ali","IT"),("Aziza","IT"),("Vali","HR"),]))
+# print(natija)
+
+# 9
+# natija=list(map(lambda x: x[1]-x[1]*0.1,[("olma",10000),("banan",12000),("uzum",15000)]))
+# print(natija)
+
+# 10
+# matn="Paytin dasturlash tili juda kuchli va sodda"
+# soz=matn.split()
+# natija=list(filter(lambda x: len(x)>5,soz))
+# print(natija)
+
+# # 11
+# sana="13.02.2025"
+# toliq(sana)
+# 12
+
+# data = [
+#     ("user1", 50),
+#     ("user2", 60),
+#     ("user1", 40),
+#     ("user3", 30)
+# ]
+
+# print(uzer(data))
+
+# # 13
+# grades = [45, 60, 75, 30, 90]
+
+# print(talab(grades, 60))
+
+# 14
+
+# words = ["telegram", "Instagram", "hello", "program", "diagram", "world"]
+
+# print(ends_with_gram(words))
+
+# uy ishi 1
+
+# sana="13.02.2025"
+# toliq(sana)
+# 12
+
+# uy ishi 2
+# data = [
+#     ("user1", 50),
+#     ("user2", 60),
+#     ("user1", 40),
+#     ("user3", 30)
+# ]
+
+# print(get_top_user(data))
+
+# uy ishi 3
+# scores = {
+#     "Class A": [70, 80, 90],
+#     "Class B": [50, 60]
+# }
+
+# print(maktab(scores))
+
+# # uy ishi 4
+# movies = [(1, 4), (3, 5), (0, 6), (5, 7), (8, 9), (5, 9)]
+
+# print(kotta(movies))
+
+

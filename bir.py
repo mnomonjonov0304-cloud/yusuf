@@ -1,0 +1,217 @@
+# 1
+def oz( k:int,n:int) -> int:
+    natija=int(str(k)+str(n))
+    return natija
+
+# natija=oz(9,6532)
+# print(natija)
+
+# 2
+def n(n:str) -> str:
+    if len(n)<1:
+        return n
+    return n[-1]+n[1:-1]+n[0]
+
+# a=input("Matin kriting:  ")
+# natija=n(a)
+# print(natija)
+
+
+# 3
+def d(d1:dict, d2:dict):
+    for i in d1:
+        if i not in d2:
+            d2[i]=d1[i]
+        else:
+            d2[i]+=d1[i]
+
+        return d2  
+
+# d1={'a':100,"b":200,"c":300}
+# d2={"a":300,"b":200,"d":400}
+# print(d(d1,d2))                
+
+# 4
+def email(a:list):
+    b=[]
+    for i in a:
+        b.append(i.split("@")[-1])
+    return list(set(b))    
+
+# lst=["uzer1@gmail.com","uzer2@mail.ru","uzer3@gmail.com"]
+# print(email(lst))
+
+# 5
+def talab(lis:list):
+    dct={}
+    for i in lis:
+        if i not in dct:
+            dct[i]=1
+        else:
+            dct[i]+=1
+
+#     print(dct)         
+# talab(lis=["matem","phyus","matem","Biologiya","matem","phyus"])
+
+# 6
+def a(talba_s,kalit):
+    if kalit in talba_s:
+        print(f"kalit:{kalit},qiymat:{talba_s[kalit]}")
+    else :
+        print("Bunday kalit mavjud emas:")  
+
+
+# talaba  ={"ism": "Ali", "yosh": 19, "fan": "Python"}
+# a(talaba,"yosh")
+
+# 7
+
+def a(matn):
+    r=matn.split(",")
+    yi=0
+    for i in r:
+        son=int(i.strip())
+        if son %2==0:
+            yi+=son
+
+#     print(f"Juft sonlar yigindisi{yi}")        
+
+# d=input("Vergul bilan sonlar kriting")
+# a(d)
+
+
+# # 8
+def a(d):
+ b=input("Soz kriting:")
+ n=set(b)
+#  son=len(n)
+#  print(f"Noyob harflar soni:{son}")
+
+# a(d)
+
+
+
+# # 9
+
+# mah={}
+# d=input("Maxsulot nomini kiriting")
+# a=float(input("Narxini kriting:"))
+# mah[d]=a
+# print(f"{mah}")
+
+
+# 10
+# a=input("Talaba ismi: ")
+# b=input("Talaba ismi: ")
+# c=a.split(",")
+# h=b.split(",")
+# set1={ism.strip() for ism in c}
+# set2={ism.strip() for ism in h}
+# u=set1 & set2
+# print(f"Ikkalo gruxda bor talabalar {u}")
+
+# 11
+# a=(input("Son kriting:").split(","))
+# a=[int(x.strip()) for x in a]
+# sa={}
+# for i in a:
+#  sa[i]=sa.get(i,0)+1
+#  p=max(sa,key=sa.get)
+
+
+# print(f"eng kop uchragan sonlar: {p}")
+
+# # 12
+# a=[int(x.strip()) for x in input("Sonlar kriting:").split(",")]
+
+# w=set(a)
+# d=sorted(w)
+# print(f"saralangan sonlar: {d}")
+
+# 13
+def talaba():
+    a={}
+    for i in range(int(input(">>. "))):
+        ism=input(f"{i+1}-Talabani ismi")
+        baho=int(input(f"{ism}ning bahosi: "))
+        a[ism]=baho
+
+#     d=max(a,key=a.get)
+#     print(f"Eng yuqori baholanggan talaba:{d}")
+
+
+# talaba()
+
+
+# uy ishi 1
+def pr(son,ma):
+    sort=sorted(ma,key=lambda x: x["price"],reverse=True)
+
+    return sort[:son]
+
+mahsulotlar = [
+    {"name": "bread", "price": 100},
+    {"name": "wine", "price": 138},
+    {"name": "meat", "price": 15},
+    {"name": "water", "price": 1},
+]
+# son=int(input("Nechta qimmat maxsulot kerak"))
+# natija=pr(son,mahsulotlar)
+# print(natija)
+
+
+# 2
+def a():
+    d=float(input("D sonini kriting:"))
+    f=float(input("F soini kirting: "))
+    qadam=[]
+    count=0
+    while d>f:
+        qadam.append(str(d))
+        d=d/2
+        count+=1
+
+        qadam.append(str(d))
+
+
+#     print(count)
+#     print("-->".join(qadam))
+
+
+
+# a()
+
+# 3
+def cash(l1:int,l2:int):
+    for qiymat in range(int(input("Nechugacha aylansin:  "))):
+        l_1=input("1-uyiunchi:")
+        l_2=input("2-uyinchi")
+        if l_1=="share" and l_2=="share":
+            l1=l1-1+3
+            l2=l2-1+3
+        elif l_1=="share" and l_2=="stel":
+            l1=l1-1
+            l2=l2+3
+        elif l_1=="stel" and l_2=="share":
+            l1=l1+3
+            l2=l2-1
+        elif l_1=="stel" and l_2=="stel":
+            pass
+#     print([l1,l2])
+
+# cash(l1=int(input("L1 boshlangich tanga qiymat:")),l2=int(input("L2 boshlangich tanga qiymati ]:")))    
+
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+    

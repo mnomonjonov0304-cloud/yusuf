@@ -1,0 +1,12 @@
+[
+    {
+        "nomi":"Olma",
+        "narx":5000,
+        "soni":3
+    },
+    {
+        "nomi":"Gilos",
+        "narx":300,
+        "soni":5
+    }
+]

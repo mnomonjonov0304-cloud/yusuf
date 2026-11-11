@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew - Kofe Do'koni</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-mug-hot"></i>
+                    <span>Bean & Brew</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" data-i18n="nav-home">Bosh sahifa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link" data-i18n="nav-menu">Menyu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-i18n="nav-about">Biz haqimizda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-i18n="nav-contact">Aloqa</a>
+                    </li>
+                    <li class="nav-item lang-switcher">
+                        <div class="lang-dropdown">
+                            <button class="lang-btn" id="langBtn">
+                                <i class="fas fa-globe"></i>
+                                <span id="currentLang">UZ</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="lang-menu" id="langMenu">
+                                <button class="lang-option active" data-lang="uz">O'zbek</button>
+                                <button class="lang-option" data-lang="ru">Русский</button>
+                                <button class="lang-option" data-lang="en">English</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero-badge">Since 1998</div>
+                <h1 class="hero-title"><span data-i18n="hero-title-1">An'anaviy uslubda</span> <span class="highlight" data-i18n="hero-title-2">qahva san'ati</span></h1>
+                <p class="hero-subtitle" data-i18n="hero-subtitle">Har bir finjonda o'tmishning nafisligi va hozirgi zamon mahorati birlashadi.
+                    Yuqori sifatli donlardan tayyorlangan klassik kofe</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary" data-i18n="hero-btn-menu">Menyuni ko'rish</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero-btn-contact">Stol band qilish</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="coffee-frame">
+                    <div class="frame-decoration frame-top"></div>
+                    <div class="coffee-showcase">
+                        <div class="coffee-steam-classic">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="coffee-slider" id="coffeeSlider">
+                            <div class="coffee-slide active">
+                                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700&h=700&fit=crop"
+                                    alt="Finjonda klassik qora kofe" class="cup-image">
+                            </div>
+                            <div class="coffee-slide">
+                                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=700&h=700&fit=crop"
+                                    alt="Cappuccino finjonda" class="cup-image">
+                            </div>
+                            <div class="coffee-slide">
+                                <img src="https://images.unsplash.com/photo-1561882468-9110e03e0f78?w=700&h=700&fit=crop"
+                                    alt="Latte art bilan" class="cup-image">
+                            </div>
+                            <div class="coffee-slide">
+                                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&h=700&fit=crop"
+                                    alt="Espresso finjonda" class="cup-image">
+                            </div>
+                            <div class="coffee-slide">
+                                <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2?w=700&h=700&fit=crop"
+                                    alt="Kremli kofe" class="cup-image">
+                            </div>
+                        </div>
+                        <div class="cup-reflection"></div>
+                        <div class="slider-dots">
+                            <span class="dot active" data-slide="0"></span>
+                            <span class="dot" data-slide="1"></span>
+                            <span class="dot" data-slide="2"></span>
+                            <span class="dot" data-slide="3"></span>
+                            <span class="dot" data-slide="4"></span>
+                        </div>
+                    </div>
+                    <div class="frame-decoration frame-bottom"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mashhur ichimliklar</h2>
+                <p class="section-subtitle">Mijozlarimiz eng ko'p tanlaydigan ichimliklar</p>
+            </div>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="featured-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>Cappuccino</h3>
+                    <p>Espresso, bug'langan sut va sut ko'pigi</p>
+                    <span class="price">35,000 so'm</span>
+                </div>
+                <div class="featured-card">
+                    <div class="featured-icon">
+                        <i class="fas fa-mug-saucer"></i>
+                    </div>
+                    <h3>Latte</h3>
+                    <p>Espresso va ko'p miqdorda bug'langan sut</p>
+                    <span class="price">38,000 so'm</span>
+                </div>
+                <div class="featured-card">
+                    <div class="featured-icon">
+                        <i class="fas fa-glass-water"></i>
+                    </div>
+                    <h3>Cold Brew</h3>
+                    <p>Sovuq suvda 12 soat davomida tayyorlangan kofe</p>
+                    <span class="price">42,000 so'm</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bizning menyu</h2>
+                <p class="section-subtitle">Har qanday kayfiyat uchun ichimliklar</p>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="category-title"><i class="fas fa-fire"></i> Issiq ichimliklar</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Espresso</h4>
+                            <p>Kuchli, konsentrlangan kofe</p>
+                        </div>
+                        <span class="menu-item-price">18,000 so'm</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Americano</h4>
+                            <p>Espresso va issiq suv</p>
+                        </div>
+                        <span class="menu-item-price">25,000 so'm</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cappuccino</h4>
+                            <p>Espresso, bug'langan sut, sut ko'pigi</p>
+                        </div>
+                        <span class="menu-item-price">35,000 so'm</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Latte</h4>
+                            <p>Espresso va bug'langan sut</p>
+                        </div>
+                        <span class="menu-item-price">38,000 so'm</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Caramel Latte</h4>
+                            <p>Latte, karamel siropi, qaymoq</p>
+                        </div>
+                        <span class="menu-item-price">42,000 so'm</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Mocha</h4>
+                            <p>Espresso, shokolad, sut, qaymoq</p>
+                        </div>
+                        <span class="menu-item-price">44,000 so'm</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3 class="category-title"><i class="fas fa-snowflake"></i> Sovuq ichimliklar</h3>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Iced Americano</h4>
+                            <p>Espresso, muz, sovuq suv</p>
+                        </div>
+                        <span class="menu-item-price">28,000 so'm</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Iced Latte</h4>
+                            <p>Espresso, muz, sovuq sut</p>
+                        </div>
+                        <span class="menu-item-price">38,000 so'm</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Cold Brew</h4>
+                            <p>12 soatlik sovuq ekstraksiya</p>
+                        </div>
+                        <span class="menu-item-price">42,000 so'm</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-info">
+                            <h4>Iced Caramel Latte</h4>
+                            <p>Iced Latte, karamel siropi</p>
+                        </div>
+                        <span class="menu-item-price">45,000 so'm</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="section-header">
+                        <h2 class="section-title">Biz haqimizda</h2>
+                    </div>
+                    <p class="about-text">
+                        Bean & Brew - bu sifatli kofe va samimiy muhitni birlashtirgan zamonaviy kofe do'koni.
+                        Biz har bir mijozga eng mazali kofeni taqdim etish va ular uchun iliq, qulay muhit yaratish maqsadida
+                        ish olib boramiz.
+                    </p>
+                    <p class="about-text">
+                        Dunyoning turli burchaklaridan tanlab olingan yuqori sifatli arabika va robusta donlarini mohir
+                        baristalarimiz mukammal tarzda pishirib, har bir chashkada mukammallikni ta'minlaymiz.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-seedling"></i>
+                            <span>100% Tabiiy donlar</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-award"></i>
+                            <span>Malakali baristalar</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Sevgi bilan tayyorlangan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Biz bilan bog'laning</h2>
+                <p class="section-subtitle">Savollaringiz bormi? Biz doimo yordam berishga tayyormiz</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Manzil</h4>
+                            <p>Toshkent sh., Amir Temur ko'chasi, 123-uy</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefon</h4>
+                            <p>+998 90 123 45 67</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Ish vaqti</h4>
+                            <p>Dush - Yakshanba: 08:00 - 22:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@beanandbrew.uz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <div class="order-info">
+                        <div class="order-icon">
+                            <i class="fab fa-telegram-plane"></i>
+                        </div>
+                        <h3>Buyurtma berish</h3>
+                        <p>Buyurtmangizni to'g'ridan-to'g'ri Telegram orqali berishingiz mumkin</p>
+                        <a href="https://t.me/nizomivch" target="_blank" class="btn btn-primary btn-full" style="margin-top: 1.5rem;">
+                            <i class="fab fa-telegram-plane"></i> Telegram orqali buyurtma berish
+                        </a>
+                        <p style="text-align: center; margin-top: 1rem; color: var(--text-light); font-size: 0.85rem;">@nizomivch</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-mug-hot"></i>
+                        <span>Bean & Brew</span>
+                    </div>
+                    <p class="footer-text" data-i18n="footer-text">Har bir chashkada sifat va muhabbat</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer-links-title">Tezkor havolalar</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-i18n="nav-home">Bosh sahifa</a></li>
+                        <li><a href="#menu" data-i18n="nav-menu">Menyu</a></li>
+                        <li><a href="#about" data-i18n="nav-about">Biz haqimizda</a></li>
+                        <li><a href="#contact" data-i18n="nav-contact">Aloqa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer-hours-title">Ish vaqti</h4>
+                    <p data-i18n="footer-hours-days">Dushanba - Yakshanba</p>
+                    <p>08:00 - 22:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
