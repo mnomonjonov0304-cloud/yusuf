@@ -23,3 +23,16 @@ def search_by_genre(cinema: list, genre: str) -> list:
         if film["genre"]==genre:
             natija.append(film)
     return natija
+
+def merge_unique_ids(active_users: list, new_users: list) -> list:
+    natija = []
+    for i in active_users:
+        if i not in natija:
+            natija.append(i)
+    for i in new_users:
+        if i not in natija:
+            natija.append(i)
+    return natija
+
+
+
