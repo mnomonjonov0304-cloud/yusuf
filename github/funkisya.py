@@ -35,4 +35,8 @@ def merge_unique_ids(active_users: list, new_users: list) -> list:
     return natija
 
 
+def sorted_by_price(products: list) -> list:
+    return sorted(products, key=lambda x: int(x[1]), reverse=True)
+
+
 

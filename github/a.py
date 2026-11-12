@@ -89,3 +89,22 @@
 # new_users = ['U1003', 'U1005', 'U1006', 'U1002', 'U1007']
 
 # print(merge_unique_ids(active_users, new_users))
+
+# from funkisya import sorted_by_price 
+
+# products = [
+#     ('Olma', '12000', '50'),
+#     ('Banan', '8000', '100'),
+#     ('Gilos', '15000', '70'),
+#     ('Apelsin', '9000', '80'),
+#     ('Anor', '30000', '20'),
+#     ('Uzum', '20000', '40'),
+#     ('Tarvuz', '25000', '15'),
+#     ('Shaftoli', '18000', '60'),
+#     ('Qovun', '40000', '25'),
+#     ('Qulupnay', '35000', '10')
+# ]
+
+# sorted_products = sorted_by_price(products)
+
+# print(sorted_products)
